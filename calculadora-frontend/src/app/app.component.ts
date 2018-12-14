@@ -21,6 +21,6 @@ export class AppComponent {
       numeroUm: this.numeroUm,
       numeroDois: this.numeroDois
     };
-    this.http.post('http://localhost:9090/api/calculadora', calculo).subscribe(response => this.response = response);
+    this.http.post('https://calculadoramateusminirvino.herokuapp.com/api/calculadora', calculo).subscribe(response => this.response = response);
   }
 }
